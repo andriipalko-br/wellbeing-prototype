@@ -53,7 +53,7 @@ export default function BookingCalendar({ availableDays, selectedDate, onSelect 
           'focus:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-colors'
         ),
         day_selected:
-          'bg-primary text-primary-foreground shadow-md ring-2 ring-brand-200 hover:bg-primary hover:text-primary-foreground',
+          'bg-primary text-primary-foreground shadow-md ring-2 ring-brand-200 hover:!bg-primary hover:!text-primary-foreground',
         day_today: 'ring-1 ring-brand-300',
         day_disabled: 'text-muted-foreground/40 opacity-50 cursor-not-allowed',
         day_outside: 'text-muted-foreground opacity-50',
