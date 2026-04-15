@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { HeartHandshake } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const NAV_LINKS = [
@@ -13,8 +14,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-30 w-full border-b border-neutral-200/70 bg-white/80 backdrop-blur-md">
       <div className="container flex h-20 items-center justify-between gap-6">
-        <NavLink to="/" className="flex items-center gap-2 py-2">
-          <img src="./logo.webp" alt="Wellbeing" className="h-12 w-auto sm:h-14" />
+        <NavLink
+          to="/"
+          className="flex items-center gap-2 py-2 text-brand-700"
+          aria-label="На головну"
+        >
+          <HeartHandshake className="h-8 w-8" strokeWidth={2} />
         </NavLink>
         <nav className="flex min-w-0 items-center gap-1 md:gap-2">
           {NAV_LINKS.map((link) => (

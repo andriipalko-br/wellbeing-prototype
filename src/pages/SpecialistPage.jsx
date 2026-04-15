@@ -106,7 +106,7 @@ export default function SpecialistPage() {
         />
       ) : (
         <Card className="rounded-2xl shadow-card">
-          <CardContent className="grid grid-cols-1 gap-6 p-6 md:grid-cols-[1fr,1px,1fr] md:gap-8">
+          <CardContent className="grid grid-cols-1 gap-6 p-6 md:grid-cols-[auto,1px,1fr] md:gap-8">
             <div className="flex flex-col gap-4">
               <h2 className="text-lg font-black">Оберіть дату</h2>
               <BookingCalendar

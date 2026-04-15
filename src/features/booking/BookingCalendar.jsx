@@ -19,7 +19,7 @@ export default function BookingCalendar({ availableDays, selectedDate, onSelect 
       locale={uk}
       weekStartsOn={1}
       showOutsideDays={false}
-      disabled={[{ before: today }, (d) => !isAvailable(d)]}
+      disabled={{ before: today }}
       modifiers={{ available: (d) => isAvailable(d) }}
       modifiersClassNames={{
         available: 'has-slot',
@@ -31,7 +31,7 @@ export default function BookingCalendar({ availableDays, selectedDate, onSelect 
       classNames={{
         root: 'p-0',
         months: 'flex',
-        month: 'space-y-4 w-full',
+        month: 'space-y-4',
         caption: 'flex justify-center items-center relative pt-1 pb-2',
         caption_label: 'text-base font-black capitalize',
         nav: 'flex items-center gap-1',
@@ -42,13 +42,13 @@ export default function BookingCalendar({ availableDays, selectedDate, onSelect 
         ),
         nav_button_previous: 'absolute left-1',
         nav_button_next: 'absolute right-1',
-        table: 'w-full border-collapse',
+        table: 'border-collapse',
         head_row: 'flex',
         head_cell: 'text-muted-foreground rounded-md w-11 text-xs font-bold uppercase tracking-wider',
-        row: 'flex w-full mt-1',
+        row: 'flex mt-1',
         cell: 'h-11 w-11 text-center p-0 relative',
         day: cn(
-          'h-11 w-11 p-0 text-sm font-bold rounded-lg',
+          'relative h-11 w-11 p-0 text-sm font-bold rounded-lg',
           'hover:bg-brand-50 hover:text-brand-700',
           'focus:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-colors'
         ),
@@ -60,15 +60,20 @@ export default function BookingCalendar({ availableDays, selectedDate, onSelect 
       }}
       footer={
         <style>{`
-          .rdp-day.has-slot:not(.rdp-day_selected)::after {
+          .has-slot::after {
             content: '';
             position: absolute;
-            bottom: 5px;
-            right: 6px;
-            width: 5px;
-            height: 5px;
+            bottom: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 4px;
             border-radius: 9999px;
             background-color: hsl(var(--primary));
+            pointer-events: none;
+          }
+          .has-slot[aria-selected="true"]::after {
+            background-color: #ffffff;
           }
         `}</style>
       }
