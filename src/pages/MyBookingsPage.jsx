@@ -88,7 +88,7 @@ function Section({ icon, title, bookings, state, emptyMessage }) {
     <section className="flex flex-col gap-4">
       <div className="flex items-center gap-2">
         {icon}
-        <h2 className="text-xl font-black">{title}</h2>
+        <h2 className="text-xl font-bold">{title}</h2>
       </div>
       {bookings.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-neutral-300 bg-white p-6 text-sm text-muted-foreground">

@@ -15,7 +15,7 @@ export default function ConsultationHistory({ bookings }) {
       <CardContent className="p-6">
         <div className="flex items-center gap-2">
           <History className="h-4 w-4 text-brand-700" />
-          <h2 className="text-lg font-black">Мої консультації з цим спеціалістом</h2>
+          <h2 className="text-lg font-bold">Мої консультації з цим спеціалістом</h2>
         </div>
 
         {bookings.length === 0 ? (

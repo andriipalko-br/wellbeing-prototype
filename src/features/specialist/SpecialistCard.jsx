@@ -31,7 +31,7 @@ export default function SpecialistCard({
 
       <div className="flex flex-1 flex-col gap-4 p-6">
         <div>
-          <h3 className="text-lg font-black leading-tight">{specialist.name}</h3>
+          <h3 className="text-lg font-bold leading-tight">{specialist.name}</h3>
           <p className="mt-1.5 line-clamp-2 text-sm text-muted-foreground">
             {specialist.shortDescription}
           </p>
@@ -61,6 +61,7 @@ export default function SpecialistCard({
         </div>
 
         <Button
+          variant="outline"
           className="w-full"
           onClick={() => navigate(`/specialists/${specialist.id}`)}
         >

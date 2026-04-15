@@ -8,7 +8,7 @@ export default function TimeSlotPicker({ dateISO, slots, selectedSlotId, onSelec
       <div className="flex items-start gap-2">
         <Clock className="mt-1 h-4 w-4 text-brand-700" />
         <div>
-          <h2 className="text-lg font-black leading-tight">Доступний час</h2>
+          <h2 className="text-lg font-bold leading-tight">Доступний час</h2>
           <p className="mt-0.5 text-sm text-muted-foreground">{formatLongDate(dateISO)}</p>
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function TimeSlotPicker({ dateISO, slots, selectedSlotId, onSelec
                 type="button"
                 onClick={() => onSelect(slot.id)}
                 className={cn(
-                  'h-10 rounded-lg border text-sm font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
+                  'h-10 rounded-[8px] border text-sm font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
                   isSelected
                     ? 'border-primary bg-primary text-primary-foreground shadow-sm'
                     : 'border-neutral-200 bg-white text-foreground hover:border-brand-200 hover:bg-brand-50 hover:text-brand-700'

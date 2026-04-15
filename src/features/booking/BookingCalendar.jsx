@@ -33,10 +33,10 @@ export default function BookingCalendar({ availableDays, selectedDate, onSelect 
         months: 'flex',
         month: 'space-y-4',
         caption: 'flex justify-center items-center relative pt-1 pb-2',
-        caption_label: 'text-base font-black capitalize',
+        caption_label: 'text-base font-bold capitalize',
         nav: 'flex items-center gap-1',
         nav_button: cn(
-          'h-9 w-9 rounded-lg border border-neutral-200 bg-white p-0',
+          'h-9 w-9 rounded-[8px] border border-neutral-200 bg-white p-0',
           'hover:bg-brand-50 hover:border-brand-200 hover:text-brand-700',
           'transition-colors inline-flex items-center justify-center'
         ),
@@ -48,7 +48,7 @@ export default function BookingCalendar({ availableDays, selectedDate, onSelect 
         row: 'flex mt-1',
         cell: 'h-11 w-11 text-center p-0 relative',
         day: cn(
-          'relative h-11 w-11 p-0 text-sm font-bold rounded-lg',
+          'relative h-11 w-11 p-0 text-sm font-bold rounded-[8px]',
           'hover:bg-brand-50 hover:text-brand-700',
           'focus:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-colors'
         ),

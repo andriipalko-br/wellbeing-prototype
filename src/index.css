@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -52,13 +52,13 @@
     @apply font-sans text-foreground antialiased;
     background:
       radial-gradient(1200px 400px at 50% -200px, rgba(8, 168, 67, 0.08), transparent 60%),
-      linear-gradient(to bottom, #ffffff 0%, #fafaf9 40%, #ffffff 100%);
+      linear-gradient(to bottom, #faf9f7 0%, #faf9f7 100%);
     min-height: 100vh;
   }
   h1,
   h2,
   h3,
   h4 {
-    @apply font-black tracking-tight;
+    @apply font-bold tracking-tight;
   }
 }

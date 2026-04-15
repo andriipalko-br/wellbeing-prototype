@@ -27,7 +27,7 @@ export default function CatalogPage() {
   return (
     <div className="flex flex-col gap-8">
       <header>
-        <h1 className="text-3xl font-black tracking-tight md:text-4xl">Спеціалісти</h1>
+        <h1 className="text-3xl font-bold tracking-tight md:text-4xl">Спеціалісти</h1>
         <p className="mt-2 max-w-xl text-sm text-muted-foreground">
           Оберіть спеціаліста та запишіться на безкоштовну консультацію.
         </p>

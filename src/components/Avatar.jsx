@@ -19,7 +19,7 @@ export default function Avatar({
   return (
     <div
       className={cn(
-        'flex shrink-0 items-center justify-center rounded-full font-black text-white',
+        'flex shrink-0 items-center justify-center rounded-full font-bold text-white',
         SIZE_CLASSES[size],
         ring ? 'ring-4 ring-white shadow-lg' : 'shadow-sm',
         className
