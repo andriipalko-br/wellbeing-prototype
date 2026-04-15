@@ -54,7 +54,7 @@ export const useAppStore = create(
     }),
     {
       name: 'wellbeing-store',
-      version: 2,
+      version: 3,
     }
   )
 );
